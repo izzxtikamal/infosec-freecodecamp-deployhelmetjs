@@ -12,7 +12,7 @@ app.use(helmet.noSniff());
 app.use(helmet.ieNoOpen());
 app.use(helmet.hsts({maxAge: ninetyDaysInSeconds, force: true}));
 app.use(helmet.dnsPrefetchControl());
-
+app.use(helmet.noCache());
 
 
 
